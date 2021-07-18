@@ -1,0 +1,19 @@
+program: fmove
+version: 0.0.proto
+author: aculage (github.com/aculage)
+commands:
+  get: 
+    info: Sets up a server to await for a file transfer
+    args:
+      -p: Specify a port for the server to listen to
+      -f: All files will be saved to the specific directory
+  send:
+    info: Sends a file to a specific address
+    args:
+      -p: Specify a port of a server
+      -a: Specify IP address of a server
+      -f: Specify path to the file or directory
+      -s: |
+          Specify a path where the file will be saved. 
+          If server has its own path specified this option will be ignored. You will be notified.
+          If server has no access to the specified path this option will be ignored. You will be notified.
